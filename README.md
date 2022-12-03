@@ -4,6 +4,6 @@
 
 It supports executable Python and R code blocks within markdown. This allows you to create fully reproducible documents and reports.
 
-Yo can publish high-quality articles, reports, presentations, websites, blogs, and books in HTML, PDF, MS Word, ePub, and more.
+Yo can publish high-quality [articles](https://github.com/quarto-journals/), reports, presentations, websites, blogs, and books in HTML, PDF, MS Word, ePub, and more.
 
 Author with scientific markdown, including equations, citations, crossrefs, figure panels, callouts, advanced layout, and more.
