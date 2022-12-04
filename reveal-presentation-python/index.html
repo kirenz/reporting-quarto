@@ -384,20 +384,10 @@
       margin-right: 0; 
     }
   </style>
-  <script type="module" src="index_files/libs/quarto-ojs/quarto-ojs-runtime.js"></script>
-  <link href="index_files/libs/quarto-ojs/quarto-ojs.css" rel="stylesheet">
-  <script src="index_files/libs/htmlwidgets-1.5.4/htmlwidgets.js"></script>
-  <script src="index_files/libs/jquery-1.12.4/jquery.min.js"></script>
-  <link href="index_files/libs/leaflet-1.3.1/leaflet.css" rel="stylesheet">
-  <script src="index_files/libs/leaflet-1.3.1/leaflet.js"></script>
-  <link href="index_files/libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet">
-  <script src="index_files/libs/proj4-2.6.2/proj4.min.js"></script>
-  <script src="index_files/libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
-  <link href="index_files/libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet">
-  <script src="index_files/libs/leaflet-binding-2.1.1/leaflet.js"></script>
-  <script type="ojs-define">
-  {"contents":[{"name":"actors","value":{"x":[-0.5885,-1.95,1.9283,1.7181,-0.2895,-1.5465,-0.6086,1.3361,0.0747,0.0133,-0.0301,-0.1065,1.4307,-1.3091,-0.3314,-0.9962,2.5765,2.4691,-0.9747,-0.1067,-0.7415,-0.6165,-0.0195,0.6698,-1.7419,0.5508,-1.7944,0.9291,1.0034,-0.782,-0.7189,0.3553,1.8841,-1.2059,0.1653,-0.4877,0.2088,0.1818,-0.2342,0.3818,0.2716,0.0345,-0.5793,0.023,0.4269,-0.1512,2.1967,-0.7638,1.2438,-0.6026,1.1344,-1.7327,-0.0894,-0.9714,-0.1971,-0.1814,-1.5347,-2.8612,-1.4785,0.5102,-0.7465,1.1373,0.7027,-0.3058,1.2031,-0.3078,2.0958,0.3667,0.0109,-0.5857,0.6747,1.4154,0.3847,-0.5157,-0.9128,-1.6937,-0.587,-1.1104,0.2997,0.4156,-0.1375,-1.5874,0.8952,0.3963,1.4344,-0.8077,-1.125,-0.0061,0.0355,0.6666,1.8706,-0.7789,0.348,0.3802,0.9722,1.4705,-0.1806,0.2523,-1.2146,1.2086],"y":[2.7667,-0.9173,0.6236,1.9933,1.4803,0.3295,2.3433,-1.7666,1.7369,1.1892,-2.6115,-0.5813,1.632,-0.3557,-0.8322,-0.3112,-1.3791,0.2268,-1.2187,-1.6168,0.2345,-1.0186,-2.3262,-0.4564,0.4617,0.5211,0.3956,0.8496,0.0954,-0.0273,0.4191,-1.5004,-1.1466,-0.2969,0.7856,1.6383,0.181,0.5888,-0.5306,-1.7963,-0.2507,-0.9261,0.1366,2.0149,-0.0376,0.0177,-0.5116,0.5401,-0.0535,0.288,3.1141,-0.3148,-0.3162,1.6647,-1.8741,2.1729,-1.2726,0.8455,-0.351,0.2206,-1.3734,1.0892,0.5688,-0.2984,1.5661,-1.3902,0.4567,-1.501,0.7239,-0.6916,0.1215,0.4789,0.7852,-0.3994,2.2647,-0.0054,-3.3681,2.4995,0.6211,-0.4883,-0.9042,1.5314,0.4723,0.1464,0.0351,-2.4326,-0.2072,-0.6519,0.906,-0.256,-0.1216,0.9519,0.039,-1.1686,0.8349,0.589,-1.2224,0.6743,-0.0804,-0.1165]}}]}
-  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+  <script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
+  <script src="https://unpkg.com/@jupyter-widgets/html-manager@*/dist/embed-amd.js" crossorigin="anonymous"></script>
 </head>
 <body class="quarto-light">
   <div class="reveal">
@@ -413,7 +403,8 @@
 </section>
 <section id="hello-there" class="slide level2">
 <h2>Hello, There</h2>
-<p>The following presentation is based on <a href="https://github.com/quarto-dev/quarto-web/tree/main/docs/presentations/revealjs/demo">this demo</a> provided by Quarto</p>
+<p>The following presentation is based on <a href="https://github.com/quarto-dev/quarto-web/tree/main/docs/presentations/revealjs/demo">this demo</a> provided by Quarto.</p>
+<p>Note that you need to install <code>ipyleaflet</code>(conda install ipyleaflet)</p>
 <p>This presentation will show you examples of what you can do with Quarto and <a href="https://revealjs.com">Reveal.js</a>, including:</p>
 <ul>
 <li>Presenting code and LaTeX equations</li>
@@ -431,11 +422,13 @@
 <li>Default theme optimized for accessibility</li>
 </ul>
 <div class="sourceCode" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode python hljs"><span id="cb1-1" class="hljs-ln-code"><a href="#cb1-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
-<span id="cb1-2" class="hljs-ln-code"><a href="#cb1-2"></a></span>
-<span id="cb1-3" class="hljs-ln-code"><a href="#cb1-3"></a><span class="co"># contingency table in pandas</span></span>
-<span id="cb1-4" class="hljs-ln-code"><a href="#cb1-4"></a>pd.crosstab(df[<span class="st">'application_type'</span>], <span class="co"># rows</span></span>
-<span id="cb1-5" class="hljs-ln-code"><a href="#cb1-5"></a>            df[<span class="st">'homeownership'</span>],    <span class="co"># columns</span></span>
-<span id="cb1-6" class="hljs-ln-code"><a href="#cb1-6"></a>            margins<span class="op">=</span><span class="va">False</span>)          <span class="co"># no total count</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-2" class="hljs-ln-code"><a href="#cb1-2"></a><span class="im">import</span> altair <span class="im">as</span> alt</span>
+<span id="cb1-3" class="hljs-ln-code"><a href="#cb1-3"></a></span>
+<span id="cb1-4" class="hljs-ln-code"><a href="#cb1-4"></a><span class="co"># sorted bar chart</span></span>
+<span id="cb1-5" class="hljs-ln-code"><a href="#cb1-5"></a>alt.Chart(source).mark_bar().encode(</span>
+<span id="cb1-6" class="hljs-ln-code"><a href="#cb1-6"></a>    x<span class="op">=</span>alt.X(<span class="st">'homeownership'</span>, sort<span class="op">=</span><span class="st">'-y'</span>), </span>
+<span id="cb1-7" class="hljs-ln-code"><a href="#cb1-7"></a>    y<span class="op">=</span>alt.Y(<span class="st">'count(homeownership)'</span>)</span>
+<span id="cb1-8" class="hljs-ln-code"><a href="#cb1-8"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="footer">
 <p>Learn more: <a href="https://quarto.org/docs/output-formats/html-code.html#highlighting">Syntax Highlighting</a></p>
 </div>
@@ -446,10 +439,13 @@
 <li>Over 20 syntax highlighting themes available</li>
 <li>Default theme optimized for accessibility</li>
 </ul>
-<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode python hljs"><span id="cb2-1" class="hljs-ln-code"><a href="#cb2-1"></a>alt.Chart(df_train).mark_circle(size<span class="op">=</span><span class="dv">100</span>).encode(</span>
-<span id="cb2-2" class="hljs-ln-code"><a href="#cb2-2"></a>    x<span class="op">=</span><span class="st">'gdp_per_capita:Q'</span>,</span>
-<span id="cb2-3" class="hljs-ln-code"><a href="#cb2-3"></a>    y<span class="op">=</span><span class="st">'life_satisfaction:Q'</span>,</span>
-<span id="cb2-4" class="hljs-ln-code"><a href="#cb2-4"></a>).interactive()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode python hljs"><span id="cb2-1" class="hljs-ln-code"><a href="#cb2-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb2-2" class="hljs-ln-code"><a href="#cb2-2"></a><span class="im">import</span> altair <span class="im">as</span> alt</span>
+<span id="cb2-3" class="hljs-ln-code"><a href="#cb2-3"></a></span>
+<span id="cb2-4" class="hljs-ln-code"><a href="#cb2-4"></a>alt.Chart(source).mark_bar().encode(</span>
+<span id="cb2-5" class="hljs-ln-code"><a href="#cb2-5"></a>    x<span class="op">=</span>alt.X(<span class="st">'homeownership'</span>, sort<span class="op">=</span><span class="st">'-y'</span>), </span>
+<span id="cb2-6" class="hljs-ln-code"><a href="#cb2-6"></a>    y<span class="op">=</span>alt.Y(<span class="st">'count(homeownership)'</span>)</span>
+<span id="cb2-7" class="hljs-ln-code"><a href="#cb2-7"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="footer">
 <p>Learn more: <a href="https://quarto.org/docs/presentations/revealjs/advanced.html#code-animations">Code Animations</a></p>
 </div>
@@ -460,30 +456,89 @@
 <li>Highlight specific lines for emphasis</li>
 <li>Incrementally highlight additional lines</li>
 </ul>
-<div class="sourceCode" id="cb3" data-code-line-numbers="4-5|7|10"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
-<span id="cb3-2"><a href="#cb3-2"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<div class="sourceCode" id="cb3" data-code-line-numbers="4-5|7|10"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb3-2"><a href="#cb3-2"></a><span class="im">import</span> altair <span class="im">as</span> alt</span>
 <span id="cb3-3"><a href="#cb3-3"></a></span>
-<span id="cb3-4"><a href="#cb3-4"></a>r <span class="op">=</span> np.arange(<span class="dv">0</span>, <span class="dv">2</span>, <span class="fl">0.01</span>)</span>
-<span id="cb3-5"><a href="#cb3-5"></a>theta <span class="op">=</span> <span class="dv">2</span> <span class="op">*</span> np.pi <span class="op">*</span> r</span>
-<span id="cb3-6"><a href="#cb3-6"></a>fig, ax <span class="op">=</span> plt.subplots(subplot_kw<span class="op">=</span>{<span class="st">'projection'</span>: <span class="st">'polar'</span>})</span>
-<span id="cb3-7"><a href="#cb3-7"></a>ax.plot(theta, r)</span>
-<span id="cb3-8"><a href="#cb3-8"></a>ax.set_rticks([<span class="fl">0.5</span>, <span class="dv">1</span>, <span class="fl">1.5</span>, <span class="dv">2</span>])</span>
-<span id="cb3-9"><a href="#cb3-9"></a>ax.grid(<span class="va">True</span>)</span>
-<span id="cb3-10"><a href="#cb3-10"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb3-4"><a href="#cb3-4"></a>ROOT <span class="op">=</span> <span class="st">"https://raw.githubusercontent.com/kirenz/datasets/master/"</span></span>
+<span id="cb3-5"><a href="#cb3-5"></a>DATA <span class="op">=</span> <span class="st">"loans50.csv"</span></span>
+<span id="cb3-6"><a href="#cb3-6"></a></span>
+<span id="cb3-7"><a href="#cb3-7"></a>df <span class="op">=</span> pd.read_csv(ROOT <span class="op">+</span> DATA)</span>
+<span id="cb3-8"><a href="#cb3-8"></a></span>
+<span id="cb3-9"><a href="#cb3-9"></a><span class="co"># sorted bar chart</span></span>
+<span id="cb3-10"><a href="#cb3-10"></a>alt.Chart(df).mark_bar().encode(</span>
+<span id="cb3-11"><a href="#cb3-11"></a>    x<span class="op">=</span>alt.X(<span class="st">'homeownership'</span>, sort<span class="op">=</span><span class="st">'-y'</span>), </span>
+<span id="cb3-12"><a href="#cb3-12"></a>    y<span class="op">=</span>alt.Y(<span class="st">'count(homeownership)'</span>)</span>
+<span id="cb3-13"><a href="#cb3-13"></a>).properties( </span>
+<span id="cb3-14"><a href="#cb3-14"></a>    title<span class="op">=</span><span class="st">'This is a simple bar chart'</span>,</span>
+<span id="cb3-15"><a href="#cb3-15"></a>    width<span class="op">=</span><span class="dv">300</span>,</span>
+<span id="cb3-16"><a href="#cb3-16"></a>    height<span class="op">=</span><span class="dv">150</span></span>
+<span id="cb3-17"><a href="#cb3-17"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="footer">
 <p>Learn more: <a href="https://quarto.org/docs/presentations/revealjs/#line-highlighting">Line Highlighting</a></p>
 </div>
 </section>
 <section id="executable-code" class="slide level2">
 <h2>Executable Code</h2>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a><span class="fu">library</span>(ggplot2)</span>
-<span id="cb4-2"><a href="#cb4-2"></a><span class="fu">ggplot</span>(mtcars, <span class="fu">aes</span>(hp, mpg, <span class="at">color =</span> am)) <span class="sc">+</span></span>
-<span id="cb4-3"><a href="#cb4-3"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
-<span id="cb4-4"><a href="#cb4-4"></a>  <span class="fu">geom_smooth</span>(<span class="at">formula =</span> y <span class="sc">~</span> x, <span class="at">method =</span> <span class="st">"loess"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell" data-fig-height="4.5" data-fig-width="10" data-execution_count="1">
+<div class="cell-output cell-output-display" data-execution_count="1">
 
+<div id="altair-viz-f9bbfeb0b93a450c8ab6f337cfc113d2"></div>
+<script type="text/javascript">
+  var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
+  (function(spec, embedOpt){
+    let outputDiv = document.currentScript.previousElementSibling;
+    if (outputDiv.id !== "altair-viz-f9bbfeb0b93a450c8ab6f337cfc113d2") {
+      outputDiv = document.getElementById("altair-viz-f9bbfeb0b93a450c8ab6f337cfc113d2");
+    }
+    const paths = {
+      "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
+      "vega-lib": "https://cdn.jsdelivr.net/npm//vega-lib?noext",
+      "vega-lite": "https://cdn.jsdelivr.net/npm//vega-lite@4.17.0?noext",
+      "vega-embed": "https://cdn.jsdelivr.net/npm//vega-embed@6?noext",
+    };
+
+    function maybeLoadScript(lib, version) {
+      var key = `${lib.replace("-", "")}_version`;
+      return (VEGA_DEBUG[key] == version) ?
+        Promise.resolve(paths[lib]) :
+        new Promise(function(resolve, reject) {
+          var s = document.createElement('script');
+          document.getElementsByTagName("head")[0].appendChild(s);
+          s.async = true;
+          s.onload = () => {
+            VEGA_DEBUG[key] = version;
+            return resolve(paths[lib]);
+          };
+          s.onerror = () => reject(`Error loading script: ${paths[lib]}`);
+          s.src = paths[lib];
+        });
+    }
+
+    function showError(err) {
+      outputDiv.innerHTML = `<div class="error" style="color:red;">${err}</div>`;
+      throw err;
+    }
+
+    function displayChart(vegaEmbed) {
+      vegaEmbed(outputDiv, spec, embedOpt)
+        .catch(err => showError(`Javascript Error: ${err.message}<br>This usually means there's a typo in your chart specification. See the javascript console for the full traceback.`));
+    }
+
+    if(typeof define === "function" && define.amd) {
+      requirejs.config({paths});
+      require(["vega-embed"], displayChart, err => showError(`Error loading script: ${err.message}`));
+    } else {
+      maybeLoadScript("vega", "5")
+        .then(() => maybeLoadScript("vega-lite", "4.17.0"))
+        .then(() => maybeLoadScript("vega-embed", "6"))
+        .catch(showError)
+        .then(() => displayChart(vegaEmbed));
+    }
+  })({"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}}, "data": {"name": "data-da268e6db2ac06384179953344dc16fb"}, "mark": "bar", "encoding": {"x": {"field": "homeownership", "sort": "-y", "type": "nominal"}, "y": {"aggregate": "count", "field": "homeownership", "type": "nominal"}}, "height": 150, "title": "This is a simple bar chart", "width": 300, "$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json", "datasets": {"data-da268e6db2ac06384179953344dc16fb": [{"state": "NJ", "emp_length": 3.0, "term": 60, "homeownership": "rent", "annual_income": 59000, "verified_income": "Not Verified", "debt_to_income": 0.5575254237288135, "total_credit_limit": 95131, "total_credit_utilized": 32894, "num_cc_carrying_balance": 8, "loan_purpose": "debt_consolidation", "loan_amount": 22000, "grade": "B", "interest_rate": 10.9, "public_record_bankrupt": 0, "loan_status": "Current", "has_second_income": false, "total_income": 59000}, {"state": "CA", "emp_length": 10.0, "term": 36, "homeownership": "rent", "annual_income": 60000, "verified_income": "Not Verified", "debt_to_income": 1.3056833333333333, "total_credit_limit": 51929, "total_credit_utilized": 78341, "num_cc_carrying_balance": 2, "loan_purpose": "credit_card", "loan_amount": 6000, "grade": "B", "interest_rate": 9.92, "public_record_bankrupt": 1, "loan_status": "Current", "has_second_income": false, "total_income": 60000}, {"state": "SC", "emp_length": null, "term": 36, "homeownership": "mortgage", "annual_income": 75000, "verified_income": "Verified", "debt_to_income": 1.05628, "total_credit_limit": 301373, "total_credit_utilized": 79221, "num_cc_carrying_balance": 14, "loan_purpose": "debt_consolidation", "loan_amount": 25000, "grade": "E", "interest_rate": 26.3, "public_record_bankrupt": 0, "loan_status": "Current", "has_second_income": false, "total_income": 75000}, {"state": "CA", "emp_length": 0.0, "term": 36, "homeownership": "rent", "annual_income": 75000, "verified_income": "Not Verified", "debt_to_income": 0.5743466666666667, "total_credit_limit": 59890, "total_credit_utilized": 43076, "num_cc_carrying_balance": 10, "loan_purpose": "credit_card", "loan_amount": 6000, "grade": "B", "interest_rate": 9.92, "public_record_bankrupt": 0, "loan_status": "Current", "has_second_income": false, "total_income": 75000}, {"state": "OH", "emp_length": 4.0, "term": 60, "homeownership": "mortgage", "annual_income": 254000, "verified_income": "Not Verified", "debt_to_income": 0.2381496062992125, "total_credit_limit": 422619, "total_credit_utilized": 60490, "num_cc_carrying_balance": 2, "loan_purpose": "home_improvement", "loan_amount": 25000, "grade": "B", "interest_rate": 9.43, "public_record_bankrupt": 0, "loan_status": "Current", "has_second_income": false, "total_income": 254000}, {"state": "IN", "emp_length": 6.0, "term": 36, "homeownership": "mortgage", "annual_income": 67000, "verified_income": "Source Verified", "debt_to_income": 1.077044776119403, "total_credit_limit": 349825, "total_credit_utilized": 72162, "num_cc_carrying_balance": 4, "loan_purpose": "home_improvement", "loan_amount": 6400, "grade": "B", "interest_rate": 9.92, "public_record_bankrupt": 0, "loan_status": "Current", "has_second_income": false, "total_income": 67000}, {"state": "NY", "emp_length": 2.0, "term": 36, "homeownership": "rent", "annual_income": 28800, "verified_income": "Source Verified", "debt_to_income": 0.0997222222222222, "total_credit_limit": 15980, "total_credit_utilized": 2872, "num_cc_carrying_balance": 1, "loan_purpose": "debt_consolidation", "loan_amount": 3000, "grade": "D", "interest_rate": 17.09, "public_record_bankrupt": 0, "loan_status": "Current", "has_second_income": false, "total_income": 28800}, {"state": "MO", "emp_length": 10.0, "term": 36, "homeownership": "mortgage", "annual_income": 80000, "verified_income": "Not Verified", "debt_to_income": 0.3509125, "total_credit_limit": 258439, "total_credit_utilized": 28073, "num_cc_carrying_balance": 3, "loan_purpose": "credit_card", "loan_amount": 14500, "grade": "A", "interest_rate": 6.08, "public_record_bankrupt": 0, "loan_status": "Current", "has_second_income": false, "total_income": 80000}, {"state": "FL", "emp_length": 6.0, "term": 60, "homeownership": "rent", "annual_income": 34000, "verified_income": "Not Verified", "debt_to_income": 0.6975, "total_credit_limit": 87705, "total_credit_utilized": 23715, "num_cc_carrying_balance": 10, "loan_purpose": "credit_card", "loan_amount": 10000, "grade": "A", "interest_rate": 7.97, "public_record_bankrupt": 0, "loan_status": "Current", "has_second_income": false, "total_income": 34000}, {"state": "FL", "emp_length": 3.0, "term": 60, "homeownership": "mortgage", "annual_income": 80000, "verified_income": "Source Verified", "debt_to_income": 0.1668541666666666, "total_credit_limit": 330394, "total_credit_utilized": 32036, "num_cc_carrying_balance": 4, "loan_purpose": "debt_consolidation", "loan_amount": 18500, "grade": "C", "interest_rate": 12.62, "public_record_bankrupt": 1, "loan_status": "Current", "has_second_income": true, "total_income": 192000}, {"state": "MD", "emp_length": 8.0, "term": 36, "homeownership": "rent", "annual_income": 73000, "verified_income": "Source Verified", "debt_to_income": 0.4143287671232876, "total_credit_limit": 36182, "total_credit_utilized": 30246, "num_cc_carrying_balance": 3, "loan_purpose": "debt_consolidation", "loan_amount": 17000, "grade": "D", "interest_rate": 17.09, "public_record_bankrupt": 0, "loan_status": "Current", "has_second_income": false, "total_income": 73000}, {"state": "HI", "emp_length": 10.0, "term": 36, "homeownership": "mortgage", "annual_income": 120000, "verified_income": "Not Verified", "debt_to_income": 0.7989083333333333, "total_credit_limit": 452712, "total_credit_utilized": 95869, "num_cc_carrying_balance": 4, "loan_purpose": "credit_card", "loan_amount": 12000, "grade": "A", "interest_rate": 5.31, "public_record_bankrupt": 0, "loan_status": "Current", "has_second_income": false, "total_income": 120000}, {"state": "CT", "emp_length": 10.0, "term": 36, "homeownership": "rent", "annual_income": 100000, "verified_income": "Source Verified", "debt_to_income": 0.27809, "total_credit_limit": 74805, "total_credit_utilized": 27809, "num_cc_carrying_balance": 3, "loan_purpose": "credit_card", "loan_amount": 16000, "grade": "A", "interest_rate": 7.35, "public_record_bankrupt": 0, "loan_status": "Current", "has_second_income": false, "total_income": 100000}, {"state": "NE", "emp_length": 2.0, "term": 36, "homeownership": "mortgage", "annual_income": 105000, "verified_income": "Not Verified", "debt_to_income": 0.2681904761904762, "total_credit_limit": 279386, "total_credit_utilized": 28160, "num_cc_carrying_balance": 2, "loan_purpose": "home_improvement", "loan_amount": 16500, "grade": "A", "interest_rate": 5.31, "public_record_bankrupt": 0, "loan_status": "Current", "has_second_income": false, "total_income": 105000}, {"state": "CA", "emp_length": 5.0, "term": 36, "homeownership": "rent", "annual_income": 34000, "verified_income": "Not Verified", "debt_to_income": 0.6292941176470588, "total_credit_limit": 33038, "total_credit_utilized": 21396, "num_cc_carrying_balance": 3, "loan_purpose": "debt_consolidation", "loan_amount": 3000, "grade": "A", "interest_rate": 7.96, "public_record_bankrupt": 0, "loan_status": "Current", "has_second_income": false, "total_income": 34000}, {"state": "TX", "emp_length": 2.0, "term": 60, "homeownership": "mortgage", "annual_income": 98000, "verified_income": "Verified", "debt_to_income": 1.1071020408163266, "total_credit_limit": 319551, "total_credit_utilized": 108496, "num_cc_carrying_balance": 6, "loan_purpose": "credit_card", "loan_amount": 29400, "grade": "E", "interest_rate": 24.85, "public_record_bankrupt": 0, "loan_status": "Fully Paid", "has_second_income": false, "total_income": 98000}, {"state": "HI", "emp_length": 5.0, "term": 60, "homeownership": "rent", "annual_income": 68700, "verified_income": "Source Verified", "debt_to_income": 1.4995487627365356, "total_credit_limit": 119325, "total_credit_utilized": 103019, "num_cc_carrying_balance": 5, "loan_purpose": "debt_consolidation", "loan_amount": 13500, "grade": "D", "interest_rate": 18.06, "public_record_bankrupt": 0, "loan_status": "Current", "has_second_income": false, "total_income": 68700}, {"state": "CA", "emp_length": 3.0, "term": 60, "homeownership": "rent", "annual_income": 43000, "verified_income": "Source Verified", "debt_to_income": 0.1546527777777777, "total_credit_limit": 60693, "total_credit_utilized": 22270, "num_cc_carrying_balance": 4, "loan_purpose": "debt_consolidation", "loan_amount": 18200, "grade": "B", "interest_rate": 10.42, "public_record_bankrupt": 0, "loan_status": "Current", "has_second_income": true, "total_income": 144000}, {"state": "CA", "emp_length": 3.0, "term": 36, "homeownership": "rent", "annual_income": 100000, "verified_income": "Source Verified", "debt_to_income": 0.13823, "total_credit_limit": 69100, "total_credit_utilized": 13823, "num_cc_carrying_balance": 5, "loan_purpose": "other", "loan_amount": 6000, "grade": "A", "interest_rate": 7.96, "public_record_bankrupt": 0, "loan_status": "Current", "has_second_income": false, "total_income": 100000}, {"state": "FL", "emp_length": 10.0, "term": 60, "homeownership": "mortgage", "annual_income": 76000, "verified_income": "Source Verified", "debt_to_income": 0.5898157894736842, "total_credit_limit": 249700, "total_credit_utilized": 44826, "num_cc_carrying_balance": 10, "loan_purpose": "debt_consolidation", "loan_amount": 18000, "grade": "D", "interest_rate": 19.42, "public_record_bankrupt": 0, "loan_status": "Current", "has_second_income": false, "total_income": 76000}, {"state": "MS", "emp_length": 10.0, "term": 36, "homeownership": "mortgage", "annual_income": 80000, "verified_income": "Verified", "debt_to_income": 0.7373059317634845, "total_credit_limit": 136046, "total_credit_utilized": 124994, "num_cc_carrying_balance": 1, "loan_purpose": "car", "loan_amount": 5000, "grade": "C", "interest_rate": 14.08, "public_record_bankrupt": 0, "loan_status": "Current", "has_second_income": true, "total_income": 169528}, {"state": "WI", "emp_length": 10.0, "term": 60, "homeownership": "mortgage", "annual_income": 50000, "verified_income": "Verified", "debt_to_income": 0.5234166666666666, "total_credit_limit": 375828, "total_credit_utilized": 87934, "num_cc_carrying_balance": 11, "loan_purpose": "debt_consolidation", "loan_amount": 40000, "grade": "D", "interest_rate": 20.0, "public_record_bankrupt": 0, "loan_status": "Fully Paid", "has_second_income": true, "total_income": 168000}, {"state": "WV", "emp_length": 0.0, "term": 36, "homeownership": "mortgage", "annual_income": 80000, "verified_income": "Not Verified", "debt_to_income": 0.7045375, "total_credit_limit": 197299, "total_credit_utilized": 56363, "num_cc_carrying_balance": 6, "loan_purpose": "debt_consolidation", "loan_amount": 4500, "grade": "B", "interest_rate": 9.44, "public_record_bankrupt": 0, "loan_status": "Fully Paid", "has_second_income": false, "total_income": 80000}, {"state": "CA", "emp_length": 1.0, "term": 36, "homeownership": "rent", "annual_income": 185000, "verified_income": "Not Verified", "debt_to_income": 0.2546756756756757, "total_credit_limit": 102500, "total_credit_utilized": 47115, "num_cc_carrying_balance": 2, "loan_purpose": "credit_card", "loan_amount": 15000, "grade": "B", "interest_rate": 9.92, "public_record_bankrupt": 0, "loan_status": "Current", "has_second_income": false, "total_income": 185000}, {"state": "NJ", "emp_length": 5.0, "term": 60, "homeownership": "mortgage", "annual_income": 42000, "verified_income": "Source Verified", "debt_to_income": 0.0866666666666666, "total_credit_limit": 64800, "total_credit_utilized": 3640, "num_cc_carrying_balance": 5, "loan_purpose": "house", "loan_amount": 20000, "grade": "B", "interest_rate": 10.91, "public_record_bankrupt": 0, "loan_status": "Current", "has_second_income": false, "total_income": 42000}, {"state": "MA", "emp_length": 2.0, "term": 36, "homeownership": "rent", "annual_income": 100000, "verified_income": "Verified", "debt_to_income": 0.3281962962962963, "total_credit_limit": 144700, "total_credit_utilized": 88613, "num_cc_carrying_balance": 4, "loan_purpose": "small_business", "loan_amount": 20000, "grade": "A", "interest_rate": 5.32, "public_record_bankrupt": 0, "loan_status": "Current", "has_second_income": true, "total_income": 270000}, {"state": "TX", "emp_length": 5.0, "term": 36, "homeownership": "mortgage", "annual_income": 65000, "verified_income": "Not Verified", "debt_to_income": 0.2427384615384615, "total_credit_limit": 256974, "total_credit_utilized": 15778, "num_cc_carrying_balance": 7, "loan_purpose": "debt_consolidation", "loan_amount": 10000, "grade": "A", "interest_rate": 6.71, "public_record_bankrupt": 0, "loan_status": "Fully Paid", "has_second_income": false, "total_income": 65000}, {"state": "IN", "emp_length": 5.0, "term": 36, "homeownership": "own", "annual_income": 45000, "verified_income": "Not Verified", "debt_to_income": 0.1573111111111111, "total_credit_limit": 121323, "total_credit_utilized": 7079, "num_cc_carrying_balance": 4, "loan_purpose": "debt_consolidation", "loan_amount": 9000, "grade": "C", "interest_rate": 15.04, "public_record_bankrupt": 0, "loan_status": "Current", "has_second_income": false, "total_income": 45000}, {"state": "RI", "emp_length": 10.0, "term": 60, "homeownership": "mortgage", "annual_income": 245000, "verified_income": "Verified", "debt_to_income": 0.1673632653061224, "total_credit_limit": 495163, "total_credit_utilized": 41004, "num_cc_carrying_balance": 6, "loan_purpose": "credit_card", "loan_amount": 35000, "grade": "B", "interest_rate": 11.98, "public_record_bankrupt": 0, "loan_status": "Current", "has_second_income": false, "total_income": 245000}, {"state": "TX", "emp_length": 0.0, "term": 36, "homeownership": "mortgage", "annual_income": 50000, "verified_income": "Source Verified", "debt_to_income": 0.6396770833333333, "total_credit_limit": 203326, "total_credit_utilized": 122818, "num_cc_carrying_balance": 4, "loan_purpose": "debt_consolidation", "loan_amount": 40000, "grade": "C", "interest_rate": 12.62, "public_record_bankrupt": 0, "loan_status": "Current", "has_second_income": true, "total_income": 192000}, {"state": "VA", "emp_length": 0.0, "term": 36, "homeownership": "rent", "annual_income": 116000, "verified_income": "Source Verified", "debt_to_income": 0.584396551724138, "total_credit_limit": 446850, "total_credit_utilized": 67790, "num_cc_carrying_balance": 7, "loan_purpose": "debt_consolidation", "loan_amount": 13125, "grade": "B", "interest_rate": 10.91, "public_record_bankrupt": 0, "loan_status": "Current", "has_second_income": false, "total_income": 116000}, {"state": "NV", "emp_length": 5.0, "term": 36, "homeownership": "mortgage", "annual_income": 30000, "verified_income": "Not Verified", "debt_to_income": 0.5120089285714285, "total_credit_limit": 190832, "total_credit_utilized": 57345, "num_cc_carrying_balance": 6, "loan_purpose": "home_improvement", "loan_amount": 32000, "grade": "B", "interest_rate": 9.44, "public_record_bankrupt": 0, "loan_status": "Current", "has_second_income": true, "total_income": 112000}, {"state": "MA", "emp_length": 4.0, "term": 60, "homeownership": "mortgage", "annual_income": 80000, "verified_income": "Not Verified", "debt_to_income": 0.2445412844036697, "total_credit_limit": 432092, "total_credit_utilized": 53310, "num_cc_carrying_balance": 5, "loan_purpose": "debt_consolidation", "loan_amount": 18000, "grade": "B", "interest_rate": 9.93, "public_record_bankrupt": 0, "loan_status": "Current", "has_second_income": true, "total_income": 218000}, {"state": "CA", "emp_length": 7.0, "term": 36, "homeownership": "rent", "annual_income": 103000, "verified_income": "Source Verified", "debt_to_income": 0.2658349514563107, "total_credit_limit": 124900, "total_credit_utilized": 27381, "num_cc_carrying_balance": 5, "loan_purpose": "other", "loan_amount": 30000, "grade": "A", "interest_rate": 7.35, "public_record_bankrupt": 0, "loan_status": "Fully Paid", "has_second_income": false, "total_income": 103000}, {"state": "IL", "emp_length": 5.0, "term": 36, "homeownership": "rent", "annual_income": 58000, "verified_income": "Not Verified", "debt_to_income": 4.777258620689655, "total_credit_limit": 236668, "total_credit_utilized": 277081, "num_cc_carrying_balance": 5, "loan_purpose": "credit_card", "loan_amount": 4400, "grade": "D", "interest_rate": 18.45, "public_record_bankrupt": 0, "loan_status": "Current", "has_second_income": false, "total_income": 58000}, {"state": "AZ", "emp_length": 0.0, "term": 36, "homeownership": "own", "annual_income": 55000, "verified_income": "Source Verified", "debt_to_income": 0.2990909090909091, "total_credit_limit": 35900, "total_credit_utilized": 16450, "num_cc_carrying_balance": 12, "loan_purpose": "debt_consolidation", "loan_amount": 7000, "grade": "D", "interest_rate": 17.09, "public_record_bankrupt": 0, "loan_status": "Current", "has_second_income": false, "total_income": 55000}, {"state": "MN", "emp_length": null, "term": 36, "homeownership": "mortgage", "annual_income": 65000, "verified_income": "Not Verified", "debt_to_income": 0.7522461538461539, "total_credit_limit": 174860, "total_credit_utilized": 48896, "num_cc_carrying_balance": 4, "loan_purpose": "credit_card", "loan_amount": 25000, "grade": "A", "interest_rate": 7.96, "public_record_bankrupt": 0, "loan_status": "Current", "has_second_income": false, "total_income": 65000}, {"state": "IL", "emp_length": 2.0, "term": 36, "homeownership": "rent", "annual_income": 32000, "verified_income": "Source Verified", "debt_to_income": 0.72128125, "total_credit_limit": 45594, "total_credit_utilized": 23081, "num_cc_carrying_balance": 4, "loan_purpose": "renewable_energy", "loan_amount": 6500, "grade": "A", "interest_rate": 6.08, "public_record_bankrupt": 1, "loan_status": "Current", "has_second_income": false, "total_income": 32000}, {"state": "MD", "emp_length": 5.0, "term": 36, "homeownership": "mortgage", "annual_income": 325000, "verified_income": "Source Verified", "debt_to_income": 0.3077507692307692, "total_credit_limit": 793009, "total_credit_utilized": 100019, "num_cc_carrying_balance": 11, "loan_purpose": "credit_card", "loan_amount": 35000, "grade": "A", "interest_rate": 6.71, "public_record_bankrupt": 0, "loan_status": "Current", "has_second_income": false, "total_income": 325000}, {"state": "MD", "emp_length": 3.0, "term": 36, "homeownership": "rent", "annual_income": 70000, "verified_income": "Source Verified", "debt_to_income": 5.333728571428572, "total_credit_limit": 272878, "total_credit_utilized": 373361, "num_cc_carrying_balance": 2, "loan_purpose": "other", "loan_amount": 7500, "grade": "A", "interest_rate": 7.34, "public_record_bankrupt": 0, "loan_status": "Current", "has_second_income": false, "total_income": 70000}, {"state": "CA", "emp_length": 10.0, "term": 60, "homeownership": "mortgage", "annual_income": 160000, "verified_income": "Verified", "debt_to_income": 0.3344, "total_credit_limit": 581604, "total_credit_utilized": 53504, "num_cc_carrying_balance": 3, "loan_purpose": "debt_consolidation", "loan_amount": 38500, "grade": "C", "interest_rate": 12.62, "public_record_bankrupt": 1, "loan_status": "Current", "has_second_income": false, "total_income": 160000}, {"state": "NJ", "emp_length": 6.0, "term": 36, "homeownership": "rent", "annual_income": 50000, "verified_income": "Source Verified", "debt_to_income": 1.25744, "total_credit_limit": 90398, "total_credit_utilized": 62872, "num_cc_carrying_balance": 5, "loan_purpose": "credit_card", "loan_amount": 15000, "grade": "C", "interest_rate": 16.02, "public_record_bankrupt": 0, "loan_status": "Current", "has_second_income": false, "total_income": 50000}, {"state": "IL", "emp_length": 10.0, "term": 60, "homeownership": "rent", "annual_income": 71000, "verified_income": "Not Verified", "debt_to_income": 0.7425211267605634, "total_credit_limit": 115970, "total_credit_utilized": 52719, "num_cc_carrying_balance": 8, "loan_purpose": "car", "loan_amount": 24000, "grade": "B", "interest_rate": 10.9, "public_record_bankrupt": 0, "loan_status": "Current", "has_second_income": false, "total_income": 71000}, {"state": "MI", "emp_length": 0.0, "term": 36, "homeownership": "mortgage", "annual_income": 85000, "verified_income": "Not Verified", "debt_to_income": 0.818764705882353, "total_credit_limit": 131847, "total_credit_utilized": 69595, "num_cc_carrying_balance": 3, "loan_purpose": "debt_consolidation", "loan_amount": 24000, "grade": "B", "interest_rate": 9.93, "public_record_bankrupt": 0, "loan_status": "Fully Paid", "has_second_income": false, "total_income": 85000}, {"state": "CA", "emp_length": 5.0, "term": 36, "homeownership": "mortgage", "annual_income": 87000, "verified_income": "Source Verified", "debt_to_income": 0.0547241379310344, "total_credit_limit": 294946, "total_credit_utilized": 4761, "num_cc_carrying_balance": 3, "loan_purpose": "debt_consolidation", "loan_amount": 12800, "grade": "B", "interest_rate": 9.44, "public_record_bankrupt": 0, "loan_status": "Current", "has_second_income": false, "total_income": 87000}, {"state": "TX", "emp_length": 10.0, "term": 36, "homeownership": "mortgage", "annual_income": 60000, "verified_income": "Not Verified", "debt_to_income": 0.7311833333333333, "total_credit_limit": 64017, "total_credit_utilized": 43871, "num_cc_carrying_balance": 5, "loan_purpose": "home_improvement", "loan_amount": 6000, "grade": "B", "interest_rate": 10.42, "public_record_bankrupt": 0, "loan_status": "Current", "has_second_income": false, "total_income": 60000}, {"state": "NV", "emp_length": 0.0, "term": 36, "homeownership": "mortgage", "annual_income": 58500, "verified_income": "Verified", "debt_to_income": 0.3968205128205128, "total_credit_limit": 49234, "total_credit_utilized": 23214, "num_cc_carrying_balance": 2, "loan_purpose": "debt_consolidation", "loan_amount": 30000, "grade": "D", "interest_rate": 21.45, "public_record_bankrupt": 0, "loan_status": "Current", "has_second_income": false, "total_income": 58500}, {"state": "NH", "emp_length": 2.0, "term": 36, "homeownership": "rent", "annual_income": 50000, "verified_income": "Source Verified", "debt_to_income": 0.50262, "total_credit_limit": 39814, "total_credit_utilized": 25131, "num_cc_carrying_balance": 4, "loan_purpose": "debt_consolidation", "loan_amount": 5825, "grade": "B", "interest_rate": 10.91, "public_record_bankrupt": 0, "loan_status": "Current", "has_second_income": false, "total_income": 50000}, {"state": "IL", "emp_length": 2.0, "term": 36, "homeownership": "own", "annual_income": 103000, "verified_income": "Not Verified", "debt_to_income": 0.9735922330097088, "total_credit_limit": 150027, "total_credit_utilized": 100280, "num_cc_carrying_balance": 4, "loan_purpose": "debt_consolidation", "loan_amount": 20000, "grade": "B", "interest_rate": 9.43, "public_record_bankrupt": 0, "loan_status": "Current", "has_second_income": false, "total_income": 103000}, {"state": "TX", "emp_length": 9.0, "term": 36, "homeownership": "mortgage", "annual_income": 77500, "verified_income": "Verified", "debt_to_income": 0.6778580645161291, "total_credit_limit": 390156, "total_credit_utilized": 52534, "num_cc_carrying_balance": 2, "loan_purpose": "other", "loan_amount": 15000, "grade": "A", "interest_rate": 6.08, "public_record_bankrupt": 0, "loan_status": "Current", "has_second_income": false, "total_income": 77500}]}}, {"mode": "vega-lite"});
+</script>
 </div>
-<img data-src="index_files/figure-revealjs/unnamed-chunk-1-1.png" width="960" class="r-stretch"><div class="footer">
+</div>
+<div class="footer">
 <p>Learn more: <a href="https://quarto.org/docs/presentations/revealjs/#executable-code">Executable Code</a></p>
 </div>
 </section>
@@ -492,17 +547,17 @@
 <p><a href="https://www.mathjax.org/">MathJax</a> rendering of equations to HTML</p>
 <div class="columns">
 <div class="column" style="width:40%;">
-<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource tex number-lines code-with-copy"><code class="sourceCode latex"><span id="cb5-1"><a href="#cb5-1"></a><span class="kw">\begin</span>{<span class="ex">gather*</span>}</span>
-<span id="cb5-2"><a href="#cb5-2"></a><span class="ss">a_1=b_1+c_1</span><span class="sc">\\</span></span>
-<span id="cb5-3"><a href="#cb5-3"></a><span class="ss">a_2=b_2+c_2-d_2+e_2</span></span>
-<span id="cb5-4"><a href="#cb5-4"></a><span class="kw">\end</span>{<span class="ex">gather*</span>}</span>
-<span id="cb5-5"><a href="#cb5-5"></a></span>
-<span id="cb5-6"><a href="#cb5-6"></a><span class="kw">\begin</span>{<span class="ex">align</span>}</span>
-<span id="cb5-7"><a href="#cb5-7"></a><span class="ss">a_{11}&amp; =b_{11}&amp;</span></span>
-<span id="cb5-8"><a href="#cb5-8"></a><span class="ss">  a_{12}&amp; =b_{12}</span><span class="sc">\\</span></span>
-<span id="cb5-9"><a href="#cb5-9"></a><span class="ss">a_{21}&amp; =b_{21}&amp;</span></span>
-<span id="cb5-10"><a href="#cb5-10"></a><span class="ss">  a_{22}&amp; =b_{22}+c_{22}</span></span>
-<span id="cb5-11"><a href="#cb5-11"></a><span class="kw">\end</span>{<span class="ex">align</span>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource tex number-lines code-with-copy"><code class="sourceCode latex"><span id="cb4-1"><a href="#cb4-1"></a><span class="kw">\begin</span>{<span class="ex">gather*</span>}</span>
+<span id="cb4-2"><a href="#cb4-2"></a><span class="ss">a_1=b_1+c_1</span><span class="sc">\\</span></span>
+<span id="cb4-3"><a href="#cb4-3"></a><span class="ss">a_2=b_2+c_2-d_2+e_2</span></span>
+<span id="cb4-4"><a href="#cb4-4"></a><span class="kw">\end</span>{<span class="ex">gather*</span>}</span>
+<span id="cb4-5"><a href="#cb4-5"></a></span>
+<span id="cb4-6"><a href="#cb4-6"></a><span class="kw">\begin</span>{<span class="ex">align</span>}</span>
+<span id="cb4-7"><a href="#cb4-7"></a><span class="ss">a_{11}&amp; =b_{11}&amp;</span></span>
+<span id="cb4-8"><a href="#cb4-8"></a><span class="ss">  a_{12}&amp; =b_{12}</span><span class="sc">\\</span></span>
+<span id="cb4-9"><a href="#cb4-9"></a><span class="ss">a_{21}&amp; =b_{21}&amp;</span></span>
+<span id="cb4-10"><a href="#cb4-10"></a><span class="ss">  a_{22}&amp; =b_{22}+c_{22}</span></span>
+<span id="cb4-11"><a href="#cb4-11"></a><span class="kw">\end</span>{<span class="ex">align</span>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column" style="width:60%;">
 <span class="math display">\[\begin{gather*}
 a_1=b_1+c_1\\
@@ -525,75 +580,50 @@ a_{21}&amp; =b_{21}&amp;
 <p>Arrange content into columns of varying widths:</p>
 <div class="columns">
 <div class="column" style="width:35%;">
-<h4 id="motor-trend-car-road-tests">Motor Trend Car Road Tests</h4>
-<p>The data was extracted from the 1974 Motor Trend US magazine, and comprises fuel consumption and 10 aspects of automobile design and performance for 32 automobiles.</p>
+<h4 id="this-is-a-text">This is a text</h4>
+<p>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat.</p>
 </div><div class="column" style="width:3%;">
 
 </div><div class="column" style="width:62%;">
-<div class="cell">
-<div class="cell-output-display">
-<table>
-<thead>
-<tr class="header">
-<th style="text-align: left;"></th>
-<th style="text-align: right;">mpg</th>
-<th style="text-align: right;">cyl</th>
-<th style="text-align: right;">disp</th>
-<th style="text-align: right;">hp</th>
-<th style="text-align: right;">wt</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">Mazda RX4</td>
-<td style="text-align: right;">21.0</td>
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">160</td>
-<td style="text-align: right;">110</td>
-<td style="text-align: right;">2.620</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Mazda RX4 Wag</td>
-<td style="text-align: right;">21.0</td>
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">160</td>
-<td style="text-align: right;">110</td>
-<td style="text-align: right;">2.875</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Datsun 710</td>
-<td style="text-align: right;">22.8</td>
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">108</td>
-<td style="text-align: right;">93</td>
-<td style="text-align: right;">2.320</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Hornet 4 Drive</td>
-<td style="text-align: right;">21.4</td>
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">258</td>
-<td style="text-align: right;">110</td>
-<td style="text-align: right;">3.215</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Hornet Sportabout</td>
-<td style="text-align: right;">18.7</td>
-<td style="text-align: right;">8</td>
-<td style="text-align: right;">360</td>
-<td style="text-align: right;">175</td>
-<td style="text-align: right;">3.440</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Valiant</td>
-<td style="text-align: right;">18.1</td>
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">225</td>
-<td style="text-align: right;">105</td>
-<td style="text-align: right;">3.460</td>
-</tr>
-</tbody>
+<div class="cell" data-execution_count="2">
+<div class="cell-output cell-output-display" data-execution_count="2">
+
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>emp_length</th>
+      <th>homeownership</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>3.0</td>
+      <td>rent</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>NaN</td>
+      <td>mortgage</td>
+    </tr>
+  </tbody>
 </table>
+</div>
 </div>
 </div>
 </div>
@@ -764,499 +794,10 @@ a_{21}&amp; =b_{21}&amp;
 <ul id="tabset-1" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-1-1">Plot</a></li><li><a href="#tabset-1-2">Data</a></li></ul>
 <div class="tab-content">
 <div id="tabset-1-1">
-<div class="cell">
-<div class="cell-output-display">
-<p><img data-src="index_files/figure-revealjs/unnamed-chunk-3-1.png" width="960"></p>
-</div>
-</div>
+
 </div>
 <div id="tabset-1-2">
-<div class="cell">
-<div class="cell-output-display">
-<table style="width:100%;">
-<colgroup>
-<col style="width: 27%">
-<col style="width: 6%">
-<col style="width: 5%">
-<col style="width: 8%">
-<col style="width: 5%">
-<col style="width: 6%">
-<col style="width: 8%">
-<col style="width: 8%">
-<col style="width: 4%">
-<col style="width: 4%">
-<col style="width: 6%">
-<col style="width: 6%">
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;"></th>
-<th style="text-align: right;">mpg</th>
-<th style="text-align: right;">cyl</th>
-<th style="text-align: right;">disp</th>
-<th style="text-align: right;">hp</th>
-<th style="text-align: right;">drat</th>
-<th style="text-align: right;">wt</th>
-<th style="text-align: right;">qsec</th>
-<th style="text-align: right;">vs</th>
-<th style="text-align: right;">am</th>
-<th style="text-align: right;">gear</th>
-<th style="text-align: right;">carb</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">Mazda RX4</td>
-<td style="text-align: right;">21.0</td>
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">160.0</td>
-<td style="text-align: right;">110</td>
-<td style="text-align: right;">3.90</td>
-<td style="text-align: right;">2.620</td>
-<td style="text-align: right;">16.46</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">4</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Mazda RX4 Wag</td>
-<td style="text-align: right;">21.0</td>
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">160.0</td>
-<td style="text-align: right;">110</td>
-<td style="text-align: right;">3.90</td>
-<td style="text-align: right;">2.875</td>
-<td style="text-align: right;">17.02</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">4</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Datsun 710</td>
-<td style="text-align: right;">22.8</td>
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">108.0</td>
-<td style="text-align: right;">93</td>
-<td style="text-align: right;">3.85</td>
-<td style="text-align: right;">2.320</td>
-<td style="text-align: right;">18.61</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">1</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Hornet 4 Drive</td>
-<td style="text-align: right;">21.4</td>
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">258.0</td>
-<td style="text-align: right;">110</td>
-<td style="text-align: right;">3.08</td>
-<td style="text-align: right;">3.215</td>
-<td style="text-align: right;">19.44</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">3</td>
-<td style="text-align: right;">1</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Hornet Sportabout</td>
-<td style="text-align: right;">18.7</td>
-<td style="text-align: right;">8</td>
-<td style="text-align: right;">360.0</td>
-<td style="text-align: right;">175</td>
-<td style="text-align: right;">3.15</td>
-<td style="text-align: right;">3.440</td>
-<td style="text-align: right;">17.02</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">3</td>
-<td style="text-align: right;">2</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Valiant</td>
-<td style="text-align: right;">18.1</td>
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">225.0</td>
-<td style="text-align: right;">105</td>
-<td style="text-align: right;">2.76</td>
-<td style="text-align: right;">3.460</td>
-<td style="text-align: right;">20.22</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">3</td>
-<td style="text-align: right;">1</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Duster 360</td>
-<td style="text-align: right;">14.3</td>
-<td style="text-align: right;">8</td>
-<td style="text-align: right;">360.0</td>
-<td style="text-align: right;">245</td>
-<td style="text-align: right;">3.21</td>
-<td style="text-align: right;">3.570</td>
-<td style="text-align: right;">15.84</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">3</td>
-<td style="text-align: right;">4</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Merc 240D</td>
-<td style="text-align: right;">24.4</td>
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">146.7</td>
-<td style="text-align: right;">62</td>
-<td style="text-align: right;">3.69</td>
-<td style="text-align: right;">3.190</td>
-<td style="text-align: right;">20.00</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">2</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Merc 230</td>
-<td style="text-align: right;">22.8</td>
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">140.8</td>
-<td style="text-align: right;">95</td>
-<td style="text-align: right;">3.92</td>
-<td style="text-align: right;">3.150</td>
-<td style="text-align: right;">22.90</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">2</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Merc 280</td>
-<td style="text-align: right;">19.2</td>
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">167.6</td>
-<td style="text-align: right;">123</td>
-<td style="text-align: right;">3.92</td>
-<td style="text-align: right;">3.440</td>
-<td style="text-align: right;">18.30</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">4</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Merc 280C</td>
-<td style="text-align: right;">17.8</td>
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">167.6</td>
-<td style="text-align: right;">123</td>
-<td style="text-align: right;">3.92</td>
-<td style="text-align: right;">3.440</td>
-<td style="text-align: right;">18.90</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">4</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Merc 450SE</td>
-<td style="text-align: right;">16.4</td>
-<td style="text-align: right;">8</td>
-<td style="text-align: right;">275.8</td>
-<td style="text-align: right;">180</td>
-<td style="text-align: right;">3.07</td>
-<td style="text-align: right;">4.070</td>
-<td style="text-align: right;">17.40</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">3</td>
-<td style="text-align: right;">3</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Merc 450SL</td>
-<td style="text-align: right;">17.3</td>
-<td style="text-align: right;">8</td>
-<td style="text-align: right;">275.8</td>
-<td style="text-align: right;">180</td>
-<td style="text-align: right;">3.07</td>
-<td style="text-align: right;">3.730</td>
-<td style="text-align: right;">17.60</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">3</td>
-<td style="text-align: right;">3</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Merc 450SLC</td>
-<td style="text-align: right;">15.2</td>
-<td style="text-align: right;">8</td>
-<td style="text-align: right;">275.8</td>
-<td style="text-align: right;">180</td>
-<td style="text-align: right;">3.07</td>
-<td style="text-align: right;">3.780</td>
-<td style="text-align: right;">18.00</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">3</td>
-<td style="text-align: right;">3</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Cadillac Fleetwood</td>
-<td style="text-align: right;">10.4</td>
-<td style="text-align: right;">8</td>
-<td style="text-align: right;">472.0</td>
-<td style="text-align: right;">205</td>
-<td style="text-align: right;">2.93</td>
-<td style="text-align: right;">5.250</td>
-<td style="text-align: right;">17.98</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">3</td>
-<td style="text-align: right;">4</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Lincoln Continental</td>
-<td style="text-align: right;">10.4</td>
-<td style="text-align: right;">8</td>
-<td style="text-align: right;">460.0</td>
-<td style="text-align: right;">215</td>
-<td style="text-align: right;">3.00</td>
-<td style="text-align: right;">5.424</td>
-<td style="text-align: right;">17.82</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">3</td>
-<td style="text-align: right;">4</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Chrysler Imperial</td>
-<td style="text-align: right;">14.7</td>
-<td style="text-align: right;">8</td>
-<td style="text-align: right;">440.0</td>
-<td style="text-align: right;">230</td>
-<td style="text-align: right;">3.23</td>
-<td style="text-align: right;">5.345</td>
-<td style="text-align: right;">17.42</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">3</td>
-<td style="text-align: right;">4</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Fiat 128</td>
-<td style="text-align: right;">32.4</td>
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">78.7</td>
-<td style="text-align: right;">66</td>
-<td style="text-align: right;">4.08</td>
-<td style="text-align: right;">2.200</td>
-<td style="text-align: right;">19.47</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">1</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Honda Civic</td>
-<td style="text-align: right;">30.4</td>
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">75.7</td>
-<td style="text-align: right;">52</td>
-<td style="text-align: right;">4.93</td>
-<td style="text-align: right;">1.615</td>
-<td style="text-align: right;">18.52</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">2</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Toyota Corolla</td>
-<td style="text-align: right;">33.9</td>
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">71.1</td>
-<td style="text-align: right;">65</td>
-<td style="text-align: right;">4.22</td>
-<td style="text-align: right;">1.835</td>
-<td style="text-align: right;">19.90</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">1</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Toyota Corona</td>
-<td style="text-align: right;">21.5</td>
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">120.1</td>
-<td style="text-align: right;">97</td>
-<td style="text-align: right;">3.70</td>
-<td style="text-align: right;">2.465</td>
-<td style="text-align: right;">20.01</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">3</td>
-<td style="text-align: right;">1</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Dodge Challenger</td>
-<td style="text-align: right;">15.5</td>
-<td style="text-align: right;">8</td>
-<td style="text-align: right;">318.0</td>
-<td style="text-align: right;">150</td>
-<td style="text-align: right;">2.76</td>
-<td style="text-align: right;">3.520</td>
-<td style="text-align: right;">16.87</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">3</td>
-<td style="text-align: right;">2</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">AMC Javelin</td>
-<td style="text-align: right;">15.2</td>
-<td style="text-align: right;">8</td>
-<td style="text-align: right;">304.0</td>
-<td style="text-align: right;">150</td>
-<td style="text-align: right;">3.15</td>
-<td style="text-align: right;">3.435</td>
-<td style="text-align: right;">17.30</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">3</td>
-<td style="text-align: right;">2</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Camaro Z28</td>
-<td style="text-align: right;">13.3</td>
-<td style="text-align: right;">8</td>
-<td style="text-align: right;">350.0</td>
-<td style="text-align: right;">245</td>
-<td style="text-align: right;">3.73</td>
-<td style="text-align: right;">3.840</td>
-<td style="text-align: right;">15.41</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">3</td>
-<td style="text-align: right;">4</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Pontiac Firebird</td>
-<td style="text-align: right;">19.2</td>
-<td style="text-align: right;">8</td>
-<td style="text-align: right;">400.0</td>
-<td style="text-align: right;">175</td>
-<td style="text-align: right;">3.08</td>
-<td style="text-align: right;">3.845</td>
-<td style="text-align: right;">17.05</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">3</td>
-<td style="text-align: right;">2</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Fiat X1-9</td>
-<td style="text-align: right;">27.3</td>
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">79.0</td>
-<td style="text-align: right;">66</td>
-<td style="text-align: right;">4.08</td>
-<td style="text-align: right;">1.935</td>
-<td style="text-align: right;">18.90</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">1</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Porsche 914-2</td>
-<td style="text-align: right;">26.0</td>
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">120.3</td>
-<td style="text-align: right;">91</td>
-<td style="text-align: right;">4.43</td>
-<td style="text-align: right;">2.140</td>
-<td style="text-align: right;">16.70</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">5</td>
-<td style="text-align: right;">2</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Lotus Europa</td>
-<td style="text-align: right;">30.4</td>
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">95.1</td>
-<td style="text-align: right;">113</td>
-<td style="text-align: right;">3.77</td>
-<td style="text-align: right;">1.513</td>
-<td style="text-align: right;">16.90</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">5</td>
-<td style="text-align: right;">2</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Ford Pantera L</td>
-<td style="text-align: right;">15.8</td>
-<td style="text-align: right;">8</td>
-<td style="text-align: right;">351.0</td>
-<td style="text-align: right;">264</td>
-<td style="text-align: right;">4.22</td>
-<td style="text-align: right;">3.170</td>
-<td style="text-align: right;">14.50</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">5</td>
-<td style="text-align: right;">4</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Ferrari Dino</td>
-<td style="text-align: right;">19.7</td>
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">145.0</td>
-<td style="text-align: right;">175</td>
-<td style="text-align: right;">3.62</td>
-<td style="text-align: right;">2.770</td>
-<td style="text-align: right;">15.50</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">5</td>
-<td style="text-align: right;">6</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Maserati Bora</td>
-<td style="text-align: right;">15.0</td>
-<td style="text-align: right;">8</td>
-<td style="text-align: right;">301.0</td>
-<td style="text-align: right;">335</td>
-<td style="text-align: right;">3.54</td>
-<td style="text-align: right;">3.570</td>
-<td style="text-align: right;">14.60</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">5</td>
-<td style="text-align: right;">8</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Volvo 142E</td>
-<td style="text-align: right;">21.4</td>
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">121.0</td>
-<td style="text-align: right;">109</td>
-<td style="text-align: right;">4.11</td>
-<td style="text-align: right;">2.780</td>
-<td style="text-align: right;">18.60</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">2</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
+
 </div>
 </div>
 </div>
@@ -1267,70 +808,15 @@ a_{21}&amp; =b_{21}&amp;
 <section id="interactive-slides" class="slide level2 smaller" data-transition="slide">
 <h2>Interactive Slides</h2>
 <p>Include Jupyter widgets and htmlwidgets in your presentations</p>
-<div class="cell">
-<div class="cell-output-display">
-<div id="htmlwidget-cf321d38e8ba05f03d9e" style="width:960px;height:480px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-cf321d38e8ba05f03d9e">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addMarkers","args":[-36.852,174.768,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"The birthplace of R",null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[-36.852,-36.852],"lng":[174.768,174.768]}},"evals":[],"jsHooks":[]}</script>
+<div class="cell" data-execution_count="1">
+<div class="cell-output cell-output-display" data-execution_count="1">
+<script type="application/vnd.jupyter.widget-view+json">
+{"model_id":"383bb5d673004e779f8b61a281484453","version_major":2,"version_minor":0}
+</script>
 </div>
 </div>
 <div class="footer">
 <p>Learn more: <a href="https://quarto.org/docs/interactive/widgets/jupyter.html">Jupyter widgets</a>, <a href="https://quarto.org/docs/interactive/widgets/htmlwidgets.html">htmlwidgets</a></p>
-</div>
-</section>
-<section id="interactive-slides-1" class="slide level2 smaller" data-transition="slide">
-<h2>Interactive Slides</h2>
-<p>Turn presentations into applications with Observable and Shiny. Use component layout to position inputs and outputs.</p>
-<div class="cell">
-
-</div>
-<div class="layout-sidebar layout-sidebar-left">
-<div class="cell panel-sidebar">
-<div class="sourceCode cell-code hidden" id="cb6" data-startfrom="372" data-source-offset="-0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 371;"><span id="cb6-372"><a href="#cb6-372"></a>viewof talentWeight <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">range</span>([<span class="op">-</span><span class="dv">2</span><span class="op">,</span> <span class="dv">2</span>]<span class="op">,</span> { <span class="dt">value</span><span class="op">:</span> <span class="fl">0.7</span><span class="op">,</span> <span class="dt">step</span><span class="op">:</span> <span class="fl">0.01</span><span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="st">"talent weight"</span> })</span>
-<span id="cb6-373"><a href="#cb6-373"></a>viewof looksWeight <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">range</span>([<span class="op">-</span><span class="dv">2</span><span class="op">,</span> <span class="dv">2</span>]<span class="op">,</span> { <span class="dt">value</span><span class="op">:</span> <span class="fl">0.7</span><span class="op">,</span> <span class="dt">step</span><span class="op">:</span> <span class="fl">0.01</span><span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="st">"looks weight"</span> })</span>
-<span id="cb6-374"><a href="#cb6-374"></a>viewof minimum <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">range</span>([<span class="op">-</span><span class="dv">2</span><span class="op">,</span> <span class="dv">2</span>]<span class="op">,</span> { <span class="dt">value</span><span class="op">:</span> <span class="dv">1</span><span class="op">,</span> <span class="dt">step</span><span class="op">:</span> <span class="fl">0.01</span><span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="st">"min fame"</span> })</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display">
-<div>
-<div id="ojs-cell-1-1" data-nodetype="declaration">
-
-</div>
-</div>
-</div>
-<div class="cell-output cell-output-display">
-<div>
-<div id="ojs-cell-1-2" data-nodetype="declaration">
-
-</div>
-</div>
-</div>
-<div class="cell-output cell-output-display">
-<div>
-<div id="ojs-cell-1-3" data-nodetype="declaration">
-
-</div>
-</div>
-</div>
-</div>
-<div class="cell panel-fill">
-<div class="sourceCode cell-code hidden" id="cb7" data-startfrom="379" data-source-offset="-0"><pre class="sourceCode numberSource js number-lines code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 378;"><span id="cb7-379"><a href="#cb7-379"></a><span class="im">import</span> { plotActors } <span class="im">from</span> <span class="st">'./actors.js'</span><span class="op">;</span></span>
-<span id="cb7-380"><a href="#cb7-380"></a><span class="fu">plotActors</span>(actors<span class="op">,</span> talentWeight<span class="op">,</span> looksWeight<span class="op">,</span> minimum)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display">
-<div>
-<div id="ojs-cell-2-1" data-nodetype="declaration">
-
-</div>
-</div>
-</div>
-<div class="cell-output cell-output-display">
-<div>
-<div id="ojs-cell-2-2" data-nodetype="expression">
-
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="footer">
-<p>Learn more: <a href="https://quarto.org/docs/interactive/ojs/">Observable</a>, <a href="https://quarto.org/docs/interactive/shiny/">Shiny</a>, <a href="https://quarto.org/docs/interactive/layout.html">Component Layout</a></p>
 </div>
 </section>
 <section id="preview-links" class="slide level2">
@@ -1679,54 +1165,6 @@ a_{21}&amp; =b_{21}&amp;
         ]
       });
     </script>
-    <script type="ojs-module-contents">
-    {"contents":[{"methodName":"interpret","cellName":"ojs-cell-1","inline":false,"source":"viewof talentWeight = Inputs.range([-2, 2], { value: 0.7, step: 0.01, label: \"talent weight\" })\nviewof looksWeight = Inputs.range([-2, 2], { value: 0.7, step: 0.01, label: \"looks weight\" })\nviewof minimum = Inputs.range([-2, 2], { value: 1, step: 0.01, label: \"min fame\" })\n"},{"methodName":"interpret","cellName":"ojs-cell-2","inline":false,"source":"import { plotActors } from './actors.js';\nplotActors(actors, talentWeight, looksWeight, minimum)\n"},{"methodName":"interpretQuiet","source":"shinyInput('talentWeight')"},{"methodName":"interpretQuiet","source":"shinyInput('looksWeight')"},{"methodName":"interpretQuiet","source":"shinyInput('minimum')"}]}
-    </script>
-    <script type="module">
-    window._ojs.paths.runtimeToDoc = "../../..";
-    window._ojs.paths.runtimeToRoot = "../../../..";
-    window._ojs.paths.docToRoot = "..";
-    window._ojs.selfContained = false;
-    window._ojs.runtime.interpretFromScriptTags();
-    </script>
-    
-    <script>
-      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
-      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
-      // slide changes (different for each slide format).
-      (function () {
-        // dispatch for htmlwidgets
-        function fireSlideEnter() {
-          const event = window.document.createEvent("Event");
-          event.initEvent("slideenter", true, true);
-          window.document.dispatchEvent(event);
-        }
-
-        function fireSlideChanged(previousSlide, currentSlide) {
-          fireSlideEnter();
-
-          // dispatch for shiny
-          if (window.jQuery) {
-            if (previousSlide) {
-              window.jQuery(previousSlide).trigger("hidden");
-            }
-            if (currentSlide) {
-              window.jQuery(currentSlide).trigger("shown");
-            }
-          }
-        }
-
-        // hookup for slidy
-        if (window.w3c_slidy) {
-          window.w3c_slidy.add_observer(function (slide_num) {
-            // slide_num starts at position 1
-            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
-          });
-        }
-
-      })();
-    </script>
-
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {
