@@ -33,15 +33,15 @@ This presentation will show you examples of what you can do with Quarto and [Rev
 -   Over 20 syntax highlighting themes available
 -   Default theme optimized for accessibility
 
-``` r
-# Define a server for the Shiny app
-function(input, output) {
-  
-  # Fill in the spot we created for a plot
-  output$phonePlot <- renderPlot({
-    # Render a barplot
-  })
-}
+``` python
+import pandas as pd
+import altair as alt
+
+# sorted bar chart
+alt.Chart(source).mark_bar().encode(
+    x=alt.X('homeownership', sort='-y'), 
+    y=alt.Y('count(homeownership)')
+)
 ```
 
 ::: footer
@@ -53,19 +53,20 @@ Learn more: [Syntax Highlighting](https://quarto.org/docs/output-formats/html-co
 -   Over 20 syntax highlighting themes available
 -   Default theme optimized for accessibility
 
-``` r
-# Define a server for the Shiny app
-function(input, output) {
-  
-  # Fill in the spot we created for a plot
-  output$phonePlot <- renderPlot({
-    # Render a barplot
-    barplot(WorldPhones[,input$region]*1000, 
-            main=input$region,
-            ylab="Number of Telephones",
-            xlab="Year")
-  })
-}
+``` python
+import pandas as pd
+import altair as alt
+
+# sorted bar chart
+alt.Chart(source).mark_bar().encode(
+    x=alt.X('homeownership', sort='-y'), 
+    y=alt.Y('count(homeownership)')
+).properties( # properties
+    title='This is a simple bar chart',
+    width=300,
+    height=150
+)
+
 ```
 
 ::: footer
@@ -78,16 +79,24 @@ Learn more: [Code Animations](https://quarto.org/docs/presentations/revealjs/adv
 -   Incrementally highlight additional lines
 
 ``` {.python code-line-numbers="4-5|7|10"}
-import numpy as np
-import matplotlib.pyplot as plt
+import pandas as pd
+import altair as alt
 
-r = np.arange(0, 2, 0.01)
-theta = 2 * np.pi * r
-fig, ax = plt.subplots(subplot_kw={'projection': 'polar'})
-ax.plot(theta, r)
-ax.set_rticks([0.5, 1, 1.5, 2])
-ax.grid(True)
-plt.show()
+ROOT = "https://raw.githubusercontent.com/kirenz/datasets/master/"
+DATA = "loans50.csv"
+
+df = pd.read_csv(ROOT + DATA)
+
+# sorted bar chart
+alt.Chart(df).mark_bar().encode(
+    x=alt.X('homeownership', sort='-y'), 
+    y=alt.Y('count(homeownership)')
+).properties( 
+    title='This is a simple bar chart',
+    width=300,
+    height=150
+)
+
 ```
 
 ::: footer
@@ -96,14 +105,31 @@ Learn more: [Line Highlighting](https://quarto.org/docs/presentations/revealjs/#
 
 ## Executable Code
 
-```{r}
+```{python}
 #| echo: true
 #| fig-width: 10
 #| fig-height: 4.5
-library(ggplot2)
-ggplot(mtcars, aes(hp, mpg, color = am)) +
-  geom_point() +
-  geom_smooth(formula = y ~ x, method = "loess")
+
+import pandas as pd
+import altair as alt
+import warnings
+warnings.simplefilter(action='ignore', category=FutureWarning)
+
+ROOT = "https://raw.githubusercontent.com/kirenz/datasets/master/"
+DATA = "loan50.csv"
+
+df = pd.read_csv(ROOT + DATA)
+
+# sorted bar chart
+alt.Chart(df).mark_bar().encode(
+    x=alt.X('homeownership', sort='-y'), 
+    y=alt.Y('count(homeownership)')
+).properties( 
+    title='This is a simple bar chart',
+    width=300,
+    height=150
+)
+
 ```
 
 ::: footer
@@ -168,8 +194,8 @@ The data was extracted from the 1974 Motor Trend US magazine, and comprises fuel
 :::
 
 ::: {.column width="62%"}
-```{r}
-knitr::kable(head(mtcars)[,c("mpg",	"cyl", "disp", "hp", "wt")])
+```{python}
+df.iloc[[0, 2], [1, 3]]
 ```
 :::
 :::
@@ -330,17 +356,33 @@ Learn more: [Slide Transitions](https://quarto.org/docs/presentations/revealjs/a
 ::: panel-tabset
 ### Plot
 
-```{r}
-library(ggplot2)
-ggplot(mtcars, aes(hp, mpg, color = am)) +
-  geom_point() +
-  geom_smooth(formula = y ~ x, method = "loess")
+```{python}
+import pandas as pd
+import altair as alt
+import warnings
+warnings.simplefilter(action='ignore', category=FutureWarning)
+
+ROOT = "https://raw.githubusercontent.com/kirenz/datasets/master/"
+DATA = "loans50.csv"
+
+df = pd.read_csv(ROOT + DATA)
+
+# sorted bar chart
+alt.Chart(df).mark_bar().encode(
+    x=alt.X('homeownership', sort='-y'), 
+    y=alt.Y('count(homeownership)')
+).properties( 
+    title='This is a simple bar chart',
+    width=300,
+    height=150
+)
+
 ```
 
 ### Data
 
-```{r}
-knitr::kable(mtcars)
+```{python}
+df.head()
 ```
 :::
 
@@ -352,46 +394,10 @@ Learn more: [Tabsets](https://quarto.org/docs/presentations/revealjs/#tabsets)
 
 Include Jupyter widgets and htmlwidgets in your presentations
 
-```{r}
-#| echo: false
-#| fig-height: 5
-library(leaflet)
-leaflet() %>%
-  addTiles() %>%  # Add default OpenStreetMap map tiles
-  addMarkers(lng=174.768, lat=-36.852, popup="The birthplace of R")
-```
-
 ::: footer
 Learn more: [Jupyter widgets](https://quarto.org/docs/interactive/widgets/jupyter.html), [htmlwidgets](https://quarto.org/docs/interactive/widgets/htmlwidgets.html)
 :::
 
-## Interactive Slides {.smaller transition="slide"}
-
-Turn presentations into applications with Observable and Shiny. Use component layout to position inputs and outputs.
-
-```{r}
-ojs_define(actors = data.frame(
-  x = rnorm(100),
-  y = rnorm(100)
-))
-```
-
-```{ojs}
-//| panel: sidebar
-viewof talentWeight = Inputs.range([-2, 2], { value: 0.7, step: 0.01, label: "talent weight" })
-viewof looksWeight = Inputs.range([-2, 2], { value: 0.7, step: 0.01, label: "looks weight" })
-viewof minimum = Inputs.range([-2, 2], { value: 1, step: 0.01, label: "min fame" })
-```
-
-```{ojs}
-//| panel: fill
-import { plotActors } from './actors.js';
-plotActors(actors, talentWeight, looksWeight, minimum)
-```
-
-::: footer
-Learn more: [Observable](https://quarto.org/docs/interactive/ojs/), [Shiny](https://quarto.org/docs/interactive/shiny/), [Component Layout](https://quarto.org/docs/interactive/layout.html)
-:::
 
 ## Preview Links
 
