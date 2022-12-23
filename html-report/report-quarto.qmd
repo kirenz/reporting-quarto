@@ -23,9 +23,12 @@ jupyter: python3 # use python
 
 ## Quarto
 
-Quarto is an open-source scientific and technical publishing system built on [Pandoc](https://pandoc.org/) (a universal document converter).
+[Quarto](https://quarto.org/) is an open-source scientific and technical publishing system built on [Pandoc](https://pandoc.org/) (a universal document converter).
 
 It supports executable Python code blocks within markdown. This allows you to create fully reproducible documents and reports.
+
+Quarto can render Jupyter notebooks represented as plain text (.qmd) or as a normal notebook file (.ipynb). The [Quarto VS Code Extension](https://marketplace.visualstudio.com/items?itemName=quarto.quarto) includes many tools that enhance working these documents. You can also convert between .ipynb and .qmd representations of a notebook using the [quarto convert command](https://quarto.org/docs/tools/jupyter-lab.html#converting-notebooks). 
+
 
 HTML documents rendered with Quarto use Bootstrap 5 by default. This can be disabled or customized via the `theme` option. Take a look a at the [different themes](https://quarto.org/docs/output-formats/html-themes.html)
 
