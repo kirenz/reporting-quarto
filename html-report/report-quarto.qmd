@@ -4,6 +4,7 @@ execute:
   echo: false # dont show code
 format: 
   html: # output format
+    embed-resources: true # create a self-contained html
     code-fold: true # if we show code, use as fold
     theme: 
       - sketchy # a html theme (try cosmo or darkly)
@@ -46,9 +47,9 @@ Note that there are five types of callouts, including:
 :::
 
 ::: {.callout-tip}
-## Tip With Caption
+## Tip
 
-This is an example of a callout with a caption.
+This is an example of a tip callout.
 :::
 
 ::: {.callout-caution collapse="true"}
