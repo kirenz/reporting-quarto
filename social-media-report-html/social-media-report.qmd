@@ -1,0 +1,298 @@
+---
+title: "Social Media Report" 
+execute:
+  echo: false # dont show code
+format: 
+  html: # output format
+    embed-resources: true # create a self-contained html
+    code-fold: true # if we show code, use as fold
+    theme: 
+      - cosmo # a html theme (try sketchy or darkly)
+      - custom.scss # additional custom scss
+    toc: true # table of content
+    number-depth: 3 # deepest level 
+    toc-title: Contents # content title
+    toc-location: left # toc alignment
+    number-sections: true # use numbering
+    html-math-method: mathjax # displays mathematical notation 
+    smooth-scroll: true # smooth scrolling
+jupyter: python3 # use python
+---
+
+
+
+# Introduction
+
+An introduction should provide context so your readers understand what to expect in the rest of the report. It should not exceed one page.
+
+The introduction to your social media report should summarize your:
+
+Intended goals
+Strategy
+Tactics
+Success metrics
+
+
+Intended goals: 
+
+*Are you aiming to increase brand awareness, drive website traffic, or boost engagement? Clear goals will guide your analysis.*
+
+
+
+Overall strategy: 
+
+*A quick overview of your social media strategy helps provide a little context, reminding readers of what we’re trying to do here. Does your company use social primarily as a channel for customer service? Social commerce? Brand awareness? All of the above?*
+
+Summary of tactics:
+
+Success metrics: 
+
+*Once you’ve settled on your goals, it’s time to decide just how you’ll measure your progress towards those goals. For instance, if your goal is to reach a younger demographic, increasing your followers on TikTok could be a great objective… and a number that’s easy to track and measure.*
+
+
+# Success snapshot 
+
+## Explanation
+
+Provide a quick summary of a campaign’s performance (or of your monthly or weekly performance, if it’s a regular report). This is just a quick overview of the most important results. If your viewers only see one slide in your report, it should be this slide.
+
+For example, you might want to list high-level data like total new followers, total engagements, or total website traffic. You’ll get into the details in the next section. 
+
+Use green for targets that you reached or exceeded, and orange for targets you missed.
+
+## Success Snapshot
+
+Between [date] and [date], we achieved the following:
+
+
+
+
+### Tables
+
+Some markdown options to create tables.
+
+
+
+Table example 1:
+
+| Default | Left | Right | Center |
+|---------|:-----|------:|:------:|
+| 12      | 12   |    12 |   12   |
+| 123     | 123  |   123 |  123   |
+| 1       | 1    |     1 |   1    |
+
+: Demonstration of pipe table syntax
+
+
+
+Table example 2:
+
+::: {#tbl-panel layout-ncol=2}
+| Col1 | Col2 | Col3 |
+|------|------|------|
+| A    | B    | C    |
+| E    | F    | G    |
+| A    | G    | G    |
+
+: First Table {#tbl-first}
+
+| Col1 | Col2 | Col3 |
+|------|------|------|
+| A    | B    | C    |
+| E    | F    | G    |
+| A    | G    | G    |
+
+: Second Table {#tbl-second}
+
+Main Caption
+:::
+
+See @tbl-panel for details, especially @tbl-second.
+
+
+
+Table example 3:
+
+
++---------------+---------------+--------------------+
+| Fruit         | Price         | Advantages         |
++===============+===============+====================+
+| Bananas       | $1.34         | - built-in wrapper |
+|               |               | - bright color     |
++---------------+---------------+--------------------+
+| Oranges       | $2.10         | - cures scurvy     |
+|               |               | - tasty            |
++---------------+---------------+--------------------+
+
+: Sample grid table.
+
+
+## Python code cells
+
+Here is a Python code output:
+
+```{python}
+#| echo: false
+ 
+import os
+os.cpu_count()
+```
+
+
+
+Let's create a table with tabulate and display the code:
+
+```{python}
+#| label: tbl-planets
+#| tbl-cap: Planets
+#| echo: true
+
+from IPython.display import Markdown
+from tabulate import tabulate
+
+table = [["Sun",696000,1989100000],
+         ["Earth",6371,5973.6],
+         ["Moon",1737,73.5],
+         ["Mars",3390,641.85]]
+
+Markdown(tabulate(
+  table, 
+  headers=["Planet","R (km)", "mass (x 10^29 kg)"]
+))
+```
+
+
+Create an interactive plot with altair:
+
+```{python}
+#| label: fig-plot
+#| fig-cap: "A plot"
+
+import pandas as pd
+import altair as alt
+import warnings
+warnings.simplefilter(action='ignore', category=FutureWarning)
+
+
+ROOT = "https://raw.githubusercontent.com/kirenz/datasets/master/"
+DATA = "loan50.csv"
+
+df = pd.read_csv(ROOT + DATA)
+
+alt.Chart(df).mark_circle(size=60).encode(
+    x=alt.X('total_income', 
+            title='Total income ($)'),
+    y=alt.Y('loan_amount', 
+            title='Loan amount ($)'),
+    tooltip=['total_income', 'loan_amount']
+).interactive()
+
+```
+
+
+```{python}
+
+alt.Chart(df).mark_circle(size=60).encode(
+    x=alt.X('total_income', 
+            title='Total income ($)'),
+    y=alt.Y('loan_amount', 
+            title='Loan amount ($)'),
+    tooltip=['total_income', 'loan_amount']
+).interactive()
+```
+
+
+## Equation
+
+Use LaTeX to write equations:
+
+$$
+\chi' = \sum_{i=1}^n k_i s_i^2
+$$
+
+
+## Tabsets
+
+Create a tabset via a markdown div with the class name panel-tabset (e.g. ::: {.panel-tabset}). Each top-level heading within the div creates a new tab. For example, here is the markdown used to implement the first two tabs displayed above:
+
+::: {.panel-tabset}
+## R
+
+``` {.r}
+fizz_buzz <- function(fbnums = 1:50) {
+  output <- dplyr::case_when(
+    fbnums %% 15 == 0 ~ "FizzBuzz",
+    fbnums %% 3 == 0 ~ "Fizz",
+    fbnums %% 5 == 0 ~ "Buzz",
+    TRUE ~ as.character(fbnums)
+  )
+  print(output)
+}
+```
+
+## Python
+
+``` {.python}
+def fizz_buzz(num):
+  if num % 15 == 0:
+    print("FizzBuzz")
+  elif num % 5 == 0:
+    print("Buzz")
+  elif num % 3 == 0:
+    print("Fizz")
+  else:
+    print(num)
+```
+:::
+
+
+Tabset group
+
+::: {.panel-tabset group="language"}
+## R
+
+Tab content
+
+## Python
+
+Tab content
+:::
+
+
+
+## Diagrams
+
+Quarto has native support for embedding [Mermaid](https://mermaid-js.github.io/mermaid/#/) and Graphviz diagrams. This enables you to create flowcharts, sequence diagrams, state diagrams, gnatt charts, and more using a plain text syntax inspired by markdown.
+
+```{mermaid}
+flowchart LR
+  A[Hard edge] --> B(Round edge)
+  B --> C{Decision}
+  C --> D[Result one]
+  C --> E[Result two]
+```
+
+Mermaid can render user journey diagrams:
+
+
+```{mermaid}
+journey
+    title My working day
+    section Go to work
+      Make tea: 5: Me
+      Go upstairs: 3: Me
+      Do work: 1: Me, Cat
+    section Go home
+      Go downstairs: 5: Me
+      Sit down: 5: Me
+```
+
+## CSS
+
+
+
+SASS theme files can define both variables that globally set things like colors and fonts, as well as rules that define more fine grained behavior. To customize an existing Bootstrap theme with your own set of variables and/or rules, just provide the base theme and then your custom theme file(s):
+
+- <https://github.com/twbs/bootstrap/blob/main/scss/_variables.scss>
+
+- <https://github.com/quarto-dev/quarto-cli/tree/main/src/resources/formats/html/bootstrap/themes>
