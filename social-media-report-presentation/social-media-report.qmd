@@ -1,0 +1,44 @@
+---
+title: "Social Media Report"
+subtitle: "Template"
+format:
+  revealjs: 
+    embed-resources: true # create a self-contained html
+    slide-number: true
+    css: styles.css
+    footer: Social Media Report
+---
+
+
+# Introduction
+
+## Intended goals
+
+- tbd
+
+## Overall strategy 
+
+- tbd
+
+## Summary of tactics
+
+- tbd
+
+
+## Success metrics
+
+- tbd
+
+
+
+# Success snapshot 
+
+## Success snapshot 
+
+[Date range]
+[Comparison date range]
+
+
+
+
+
