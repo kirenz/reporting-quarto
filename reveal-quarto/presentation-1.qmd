@@ -1,0 +1,40 @@
+---
+title: "Reveal Presentation"
+subtitle: "Tutorial"
+author: "Name"
+execute: 
+  eval: true
+lang: de
+highlight-style: github
+format: 
+    revealjs:
+        toc: true
+        toc-depth: 1
+        embed-resources: true
+        code-copy: true
+        code-line-numbers: true
+        scrollable: true
+        slide-number: c
+        incremental: true
+        transition: slide
+        theme: [dark, custom.scss]
+---
+
+
+# Teil 1
+
+## Test
+
+## Test2
+
+
+```{python}
+1 + 1
+
+```
+
+# Teil 2
+
+## Text
+
+## Text
